@@ -19,13 +19,13 @@ public class RocketManeuver : MonoBehaviour
      void CheckMiscKeys ()
      {
          // Start applying thrust
-         if (Input.GetKeyDown(KeyCode.Space))
+         if (Input.GetKeyDown(KeyCode.W))
          {
              applyThrust = true;
          }
  
          // Stop applying thrust
-         if (Input.GetKeyUp(KeyCode.Space))
+         if (Input.GetKeyUp(KeyCode.W))
          {
              applyThrust = false;
          }
@@ -35,7 +35,8 @@ public class RocketManeuver : MonoBehaviour
      void CheckRotationKeys ()
      {
          // Rotate forward
-         if (Input.GetKey (KeyCode.W))
+         
+         /*if (Input.GetKey (KeyCode.W))
          {
              transform.Rotate (rotationSpeed * new Vector3 (1, 0, 0));
          }
@@ -44,7 +45,7 @@ public class RocketManeuver : MonoBehaviour
          if (Input.GetKey (KeyCode.S))
          {
              transform.Rotate (rotationSpeed * new Vector3 (-1, 0, 0));
-         }
+         }*/
  
          // Rotate left
          if (Input.GetKey (KeyCode.A))
