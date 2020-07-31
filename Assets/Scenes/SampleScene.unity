@@ -316,8 +316,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceleration: {x: 0, y: 0, z: 0}
-  mass: 0.01
-  velocity: {x: 0, y: 0.71, z: 0}
+  mass: -0.01
+  velocity: {x: 0, y: 0.72, z: 0}
 --- !u!54 &866736367
 Rigidbody:
   m_ObjectHideFlags: 0
