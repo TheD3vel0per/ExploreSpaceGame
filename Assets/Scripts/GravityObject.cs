@@ -1,6 +1,12 @@
 ﻿using System;
 using UnityEngine;
 
+/**
+ * @author Devam Sisodraker
+ * @author Aiden Kerr
+ * @author Vishal Desh
+ * @author Pedro Machado
+ */
 public class GravityObject : MonoBehaviour {
     public Vector2 initialVelocity = new Vector2(0, 0);
 
