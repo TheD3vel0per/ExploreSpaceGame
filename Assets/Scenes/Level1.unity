@@ -157,7 +157,7 @@ MonoBehaviour:
   numSteps: 10000
   timeStep: 0.1
   usePhysicsTimeStep: 0
-  relativeToBody: 0
+  relativeToBody: 1
   centralBody: {fileID: 1512092437}
   width: 100
   useThickLines: 0
@@ -1166,7 +1166,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575485130}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 251.8, y: 0, z: 10}
+  m_LocalPosition: {x: 250.5, y: 0, z: 10}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 192455072}
@@ -1186,7 +1186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acceleration: {x: 0, y: 0, z: 0}
   mass: 0.008035
-  velocity: {x: 0, y: 4.42, z: 0}
+  velocity: {x: 0, y: 4.4, z: 0}
 --- !u!54 &1575485133
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1400,7 +1400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acceleration: {x: 0, y: 0, z: 0}
   mass: 0.000000001
-  velocity: {x: 0, y: 3.12, z: 0}
+  velocity: {x: 0, y: 2.77, z: 0}
 --- !u!114 &2006721637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1489,7 +1489,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006721635}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 268.3474, y: 0.552928, z: 10}
+  m_LocalPosition: {x: 261.03, y: 0.07, z: 10}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 2077564124}
