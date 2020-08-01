@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /**
  * @author Devam Sisodraker
@@ -27,6 +28,8 @@ public class RocketManeuver : MonoBehaviour {
             thrustMultiplier += 0.01f;
         if (Input.GetKey(KeyCode.DownArrow))
             thrustMultiplier -= 0.01f;
+        if (Input.GetKey(KeyCode.Escape))
+            SceneManager.LoadScene("TitleScreen", LoadSceneMode.Single);
         Debug.Log(thrustMultiplier);
     }
 
