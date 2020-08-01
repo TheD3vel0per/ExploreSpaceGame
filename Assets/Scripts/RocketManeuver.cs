@@ -20,22 +20,29 @@ public class RocketManeuver : MonoBehaviour {
     private void CheckMiscKeys() {
         // Start applying thrust
         if (Input.GetKey(KeyCode.W))
-            ApplyRocketThrust();
+            ApplyRocketThrust(true);
+        if (Input.GetKey(KeyCode.S))
+            ApplyRocketThrust(false);
+        if (Input.GetKey(KeyCode.UpArrow))
+            thrustMultiplier += 0.01f;
+        if (Input.GetKey(KeyCode.DownArrow))
+            thrustMultiplier -= 0.01f;
+        Debug.Log(thrustMultiplier);
     }
 
     // Check for rotation keypresses
     private void CheckRotationKeys() {
         // Rotate left
-        if (Input.GetKey(KeyCode.A)) transform.Rotate(rotationSpeed * new Vector3(0, 0, -1));
+        if (Input.GetKey(KeyCode.D)) transform.Rotate(rotationSpeed * new Vector3(0, 0, -1));
 
         // Rotate right
-        if (Input.GetKey(KeyCode.D)) transform.Rotate(rotationSpeed * new Vector3(0, 0, 1));
+        if (Input.GetKey(KeyCode.A)) transform.Rotate(rotationSpeed * new Vector3(0, 0, 1));
     }
 
     // Apply thrust to the rocket's rigidbody
-    private void ApplyRocketThrust() {
+    private void ApplyRocketThrust(bool forward) {
         Vector2 force = transform.up * thrustMultiplier;
-        _rb.AddForce(force, ForceMode.Impulse);
+        _rb.AddForce(forward ? force : -force, ForceMode.Impulse);
     }
 
     // Run physics calculations and misc events
