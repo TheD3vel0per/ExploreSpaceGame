@@ -157,7 +157,7 @@ MonoBehaviour:
   numSteps: 10000
   timeStep: 0.1
   usePhysicsTimeStep: 0
-  relativeToBody: 1
+  relativeToBody: 0
   centralBody: {fileID: 1512092437}
   width: 100
   useThickLines: 0
@@ -290,7 +290,7 @@ GameObject:
   - component: {fileID: 626908736}
   - component: {fileID: 626908735}
   - component: {fileID: 626908734}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1055,6 +1055,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1551234389}
   - component: {fileID: 1551234390}
+  - component: {fileID: 1551234391}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -1087,8 +1088,8 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.2
+  m_Color: {r: 0.9528302, g: 0.9500178, b: 0.5528213, a: 1}
+  m_Intensity: 1.5
   m_Range: 30000
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1137,6 +1138,22 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!123 &1551234391
+LensFlare:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551234388}
+  m_Enabled: 1
+  m_Flare: {fileID: 12100000, guid: 09ebe82dbd1113c3d000dc0b8d76c639, type: 2}
+  m_Color: {r: 0.95294124, g: 0.9490197, b: 0.5529412, a: 0}
+  m_Brightness: 1
+  m_FadeSpeed: 3
+  m_IgnoreLayers:
+    serializedVersion: 2
+    m_Bits: 262
+  m_Directional: 0
 --- !u!1 &1575485130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,6 +1294,7 @@ GameObject:
   - component: {fileID: 1969841275}
   - component: {fileID: 1969841274}
   - component: {fileID: 1969841276}
+  - component: {fileID: 1969841277}
   m_Layer: 0
   m_Name: Front Camera
   m_TagString: MainCamera
@@ -1357,7 +1375,7 @@ LensFlare:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969841272}
   m_Enabled: 1
-  m_Flare: {fileID: 0}
+  m_Flare: {fileID: 12100000, guid: 09ebe82dbd1113c3d000dc0b8d76c639, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_Brightness: 1
   m_FadeSpeed: 3
@@ -1365,6 +1383,14 @@ LensFlare:
     serializedVersion: 2
     m_Bits: 6
   m_Directional: 0
+--- !u!124 &1969841277
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969841272}
+  m_Enabled: 1
 --- !u!1 &2006721635
 GameObject:
   m_ObjectHideFlags: 0
@@ -1536,7 +1562,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077564123}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &2077564126
 Camera:
   m_ObjectHideFlags: 0
