@@ -1,4 +1,4 @@
-# Expl0re.Space Game <img align="right" alt="Explore Space" src="./rocket.png" width="150px" height="150px" style="border-radius: 25px;">
+# Expl0re.Space Game <img align="right" alt="Explore Space" src="./rocket.png" width="150px" height="350px" style="border-radius: 25px;">
 
 ## About This Project
 This Unity project was made by our team during the __To the Moon and Hack__ hackathon by MLH.  
