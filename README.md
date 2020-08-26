@@ -32,8 +32,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 ## Application Demo
-- [Demo Link For the Game](https://explorespace-5d3a9.web.app/)
-- [Demo Link For Web App](https://game.expl0re.space/)
+- [Demo Link For the Game](https://game.expl0re.space/)
+- [Demo Link For Web App](https://explorespace-5d3a9.web.app/)
 
 
 ## Pull Requests
